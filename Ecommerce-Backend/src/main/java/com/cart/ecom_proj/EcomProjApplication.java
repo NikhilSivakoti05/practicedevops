@@ -2,12 +2,18 @@ package com.cart.ecom_proj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class EcomProjApplication {
+public class EcomProjApplication extends SpringBootServletInitializer {
 
-	public static void main(String[] args) {
-		SpringApplication.run(EcomProjApplication.class, args);
-	}
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(EcomProjApplication.class);
+    }
 
+    public static void main(String[] args) {
+        SpringApplication.run(EcomProjApplication.class, args);
+    }
 }
