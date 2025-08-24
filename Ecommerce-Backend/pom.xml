@@ -75,7 +75,7 @@
     </dependencies>
 
     <build>
-        <finalName>practisedevops</finalName>
+        <finalName>practicedevops</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
